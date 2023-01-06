@@ -1,0 +1,102 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <reference path="source.js"></reference>
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<reference path="source.js">
+    <div class="Logo">
+        <img src="International_Pokémon_logo.svg.png" alt="LogoPokemon">
+    </div>
+    <div class="my-4 p-4 flex h-full">
+        <div class="w-full">
+            <div class="flex">
+                <input type="text" class="Pesquisa" placeholder="Procura um Pokemon" id="searchInput">
+                <button class="button" id="search-buttonP1" onclick=getPokemon()> Procurar
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pokebola">
+        <img src="pokebolas/pokebola.png" alt="" style="width: 200px;">
+    </div>
+
+    <div id="pokeCard" class="Card" style="border: black solid 1px; margin-top: -15px;" hidden>
+        <div class="imagemPokemon">
+            <img id="imgPoke" style="width: 160px;">
+        </div>
+        <div class="nomePokemon">
+            <p id="nomeIdPoke" class="text-center"></p>
+            <hr>
+        </div>
+        <div class="tipo">
+            <img id="imgTipo1" style="width: 50px;">
+            <img id="imgTipo2" style="width: 50px;">
+            <hr>
+        </div>
+        <div class="habilidades text-center" id="habilidadesDiv" hidden>
+            <br>
+            <h5>Habilidades</h5>
+            <b>Não Escondidas: </b><small id="nonHidden"></small> | 
+            <b id="hiddenTitle"> Escondidas: </b><small id="hidden"></small>
+            <hr>
+        </div>
+        <div class="size text-center" id="sizeDiv" hidden>
+            <br>
+            <b>Altura: </b><small id="alturaPoke"></small>
+            <b>Peso: </b><small id="pesoPoke"></small>
+            <hr>
+        </div>
+
+        <div class="container text-center stats" id="statsDiv" style="left:0" hidden>
+            <div class="row">
+                <div class="col">
+                    <b id="stat0"></b><small class="me-5" id="val0"></small>
+                </div>
+                <div class="col">
+                    <b id="stat1"></b><small              id="val1"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <b id="stat2"></b><small class="me-5" id="val2"></small>
+                </div>
+                <div class="col">
+                    <b id="stat3"></b><small              id="val3"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <b id="stat4"></b><small class="me-5" id="val4"></small>
+                </div>
+                <div class="col">
+                    <b id="stat5"></b><small              id="val5"></small>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-outline-light" onclick="getPokemonById('anter')"><img src="pokebolas/greatbolaPequena.png" style="width: 30px;"><small class="text-black">Anterior</small></button>   
+                </div>
+                <div class="col">
+                    <button class="btn btn-outline-light" onclick="getPokemonById('prox')"><img src="pokebolas/ultraBallPequena.png" style="width: 30px;"><small class="text-black">Proximo</small></button>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="source.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

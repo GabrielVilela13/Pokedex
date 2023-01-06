@@ -1,0 +1,39 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: red;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    display: block;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+  }
+
+  .button {
+    background-color: #ffd858; /* Green */
+    border: none;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .pesquisa {
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px 20px 20 px;
+  }
+  
+  
